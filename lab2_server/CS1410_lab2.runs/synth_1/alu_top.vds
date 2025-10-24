@@ -1,0 +1,1002 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Oct 10 04:04:44 2025
+# Process ID: 2017259
+# Current directory: /home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.runs/synth_1
+# Command line: vivado -log alu_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu_top.tcl
+# Log file: /home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.runs/synth_1/alu_top.vds
+# Journal file: /home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.runs/synth_1/vivado.jou
+# Running On: sec-academic-1.int.seas.harvard.edu, OS: Linux, CPU Frequency: 3399.852 MHz, CPU Physical cores: 25, Host memory: 539830 MB
+#-----------------------------------------------------------
+source alu_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2000.012 ; gain = 84.992 ; free physical = 374266 ; free virtual = 385346
+Command: read_checkpoint -auto_incremental -incremental /home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/utils_1/imports/synth_1/alu_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/utils_1/imports/synth_1/alu_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top alu_top -part xc7a75tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Device 21-403] Loading part xc7a75tfgg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2018074
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/software/xilinx-tools-2022/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'z_cla', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/source/STUDENT_alu.sv:108]
+INFO: [Synth 8-11241] undeclared symbol 'a0', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:159]
+INFO: [Synth 8-11241] undeclared symbol 'a1', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:160]
+INFO: [Synth 8-11241] undeclared symbol 'a2', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:161]
+INFO: [Synth 8-11241] undeclared symbol 'a3', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:162]
+INFO: [Synth 8-11241] undeclared symbol 'p0c0', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:211]
+INFO: [Synth 8-11241] undeclared symbol 'p1g0', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:215]
+INFO: [Synth 8-11241] undeclared symbol 'p1p0c0', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:216]
+INFO: [Synth 8-11241] undeclared symbol 'p2g1', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:220]
+INFO: [Synth 8-11241] undeclared symbol 'p2p1g0', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:221]
+INFO: [Synth 8-11241] undeclared symbol 'p2p1p0c0', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:222]
+INFO: [Synth 8-11241] undeclared symbol 'p3g2', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:226]
+INFO: [Synth 8-11241] undeclared symbol 'p3p2g1', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:227]
+INFO: [Synth 8-11241] undeclared symbol 'p3p2p1g0', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:228]
+INFO: [Synth 8-11241] undeclared symbol 'p3p2p1p0c0', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:229]
+INFO: [Synth 8-11241] undeclared symbol 'p0c0', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:270]
+INFO: [Synth 8-11241] undeclared symbol 'p1g0', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:274]
+INFO: [Synth 8-11241] undeclared symbol 'p1p0c0', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:275]
+INFO: [Synth 8-11241] undeclared symbol 'nsel16', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-11241] undeclared symbol 'a_no16', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-11241] undeclared symbol 'a_16', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-11241] undeclared symbol 'nsel8', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:313]
+INFO: [Synth 8-11241] undeclared symbol 'a_no8', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:320]
+INFO: [Synth 8-11241] undeclared symbol 'a_8', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:321]
+INFO: [Synth 8-11241] undeclared symbol 'nsel4', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:330]
+INFO: [Synth 8-11241] undeclared symbol 'a_no4', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:337]
+INFO: [Synth 8-11241] undeclared symbol 'a_4', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:338]
+INFO: [Synth 8-11241] undeclared symbol 'nsel2', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:347]
+INFO: [Synth 8-11241] undeclared symbol 'a_no2', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:354]
+INFO: [Synth 8-11241] undeclared symbol 'a_2', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:355]
+INFO: [Synth 8-11241] undeclared symbol 'nsel1', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:364]
+INFO: [Synth 8-11241] undeclared symbol 'a_no1', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:371]
+INFO: [Synth 8-11241] undeclared symbol 'a_1', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:372]
+INFO: [Synth 8-11241] undeclared symbol 'nsel16', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:396]
+INFO: [Synth 8-11241] undeclared symbol 'a_no16', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:403]
+INFO: [Synth 8-11241] undeclared symbol 'a_16', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:404]
+INFO: [Synth 8-11241] undeclared symbol 'nsel8', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:413]
+INFO: [Synth 8-11241] undeclared symbol 'a_no8', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:420]
+INFO: [Synth 8-11241] undeclared symbol 'a_8', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:421]
+INFO: [Synth 8-11241] undeclared symbol 'nsel4', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:430]
+INFO: [Synth 8-11241] undeclared symbol 'a_no4', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:437]
+INFO: [Synth 8-11241] undeclared symbol 'a_4', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:438]
+INFO: [Synth 8-11241] undeclared symbol 'nsel2', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:447]
+INFO: [Synth 8-11241] undeclared symbol 'a_no2', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:454]
+INFO: [Synth 8-11241] undeclared symbol 'a_2', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:455]
+INFO: [Synth 8-11241] undeclared symbol 'nsel1', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:464]
+INFO: [Synth 8-11241] undeclared symbol 'a_no1', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:471]
+INFO: [Synth 8-11241] undeclared symbol 'a_1', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:472]
+INFO: [Synth 8-11241] undeclared symbol 'nsel16', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:493]
+INFO: [Synth 8-11241] undeclared symbol 'a_no16', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:500]
+INFO: [Synth 8-11241] undeclared symbol 'a_16', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:501]
+INFO: [Synth 8-11241] undeclared symbol 'nsel8', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:510]
+INFO: [Synth 8-11241] undeclared symbol 'a_no8', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:517]
+INFO: [Synth 8-11241] undeclared symbol 'a_8', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:518]
+INFO: [Synth 8-11241] undeclared symbol 'nsel4', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:527]
+INFO: [Synth 8-11241] undeclared symbol 'a_no4', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:534]
+INFO: [Synth 8-11241] undeclared symbol 'a_4', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:535]
+INFO: [Synth 8-11241] undeclared symbol 'nsel2', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:544]
+INFO: [Synth 8-11241] undeclared symbol 'a_no2', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:551]
+INFO: [Synth 8-11241] undeclared symbol 'a_2', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:552]
+INFO: [Synth 8-11241] undeclared symbol 'nsel1', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:561]
+INFO: [Synth 8-11241] undeclared symbol 'a_no1', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:568]
+INFO: [Synth 8-11241] undeclared symbol 'a_1', assumed default net type 'wire' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:569]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2732.781 ; gain = 381.699 ; free physical = 373344 ; free virtual = 384425
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1926.493; parent = 1802.999; children = 123.494
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3731.480; parent = 2736.754; children = 994.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'alu_top' [/home/angie_wong/cs1410_lab/lab2/lab2_server/source/alu_top.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'STUDENT_alu' [/home/angie_wong/cs1410_lab/lab2/lab2_server/source/STUDENT_alu.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'and32' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'and32' (0#1) [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'rca' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:34]
+INFO: [Synth 8-6157] synthesizing module 'fulladder' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'fulladder' (0#1) [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'rca' (0#1) [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:34]
+INFO: [Synth 8-6157] synthesizing module 'slt32' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:66]
+INFO: [Synth 8-6155] done synthesizing module 'slt32' (0#1) [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:66]
+INFO: [Synth 8-6157] synthesizing module 'srl32' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:282]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+INFO: [Synth 8-556] previous implicit net 'nsel16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:296]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+INFO: [Synth 8-556] previous implicit net 'a_no16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:303]
+WARNING: [Synth 8-605] same-named implicit nets 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+INFO: [Synth 8-556] previous implicit net 'a_16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:304]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel8' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:313]
+INFO: [Synth 8-556] previous implicit net 'nsel8' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:313]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no8' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:320]
+INFO: [Synth 8-556] previous implicit net 'a_no8' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:320]
+WARNING: [Synth 8-605] same-named implicit nets 'a_8' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:321]
+INFO: [Synth 8-556] previous implicit net 'a_8' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:321]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel8' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:313]
+INFO: [Synth 8-556] previous implicit net 'nsel8' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:313]
+WARNING: [Synth 8-605] same-named implicit nets 'a_no8' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:320]
+INFO: [Synth 8-556] previous implicit net 'a_no8' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:320]
+WARNING: [Synth 8-605] same-named implicit nets 'a_8' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:321]
+INFO: [Synth 8-556] previous implicit net 'a_8' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:321]
+WARNING: [Synth 8-605] same-named implicit nets 'nsel8' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:313]
+INFO: [Common 17-14] Message 'Synth 8-605' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-556] previous implicit net 'nsel8' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:313]
+INFO: [Common 17-14] Message 'Synth 8-556' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'srl32' (0#1) [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:282]
+INFO: [Synth 8-6157] synthesizing module 'sra32' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:380]
+INFO: [Synth 8-6155] done synthesizing module 'sra32' (0#1) [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:380]
+INFO: [Synth 8-6157] synthesizing module 'sll32' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:479]
+INFO: [Synth 8-6155] done synthesizing module 'sll32' (0#1) [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:479]
+INFO: [Synth 8-6157] synthesizing module 'cla32' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:236]
+INFO: [Synth 8-6157] synthesizing module 'cla16' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:184]
+INFO: [Synth 8-6157] synthesizing module 'cla4' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:136]
+INFO: [Synth 8-6155] done synthesizing module 'cla4' (0#1) [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:136]
+INFO: [Synth 8-6155] done synthesizing module 'cla16' (0#1) [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:184]
+INFO: [Synth 8-6155] done synthesizing module 'cla32' (0#1) [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:236]
+INFO: [Synth 8-6157] synthesizing module 'mux8_32bit' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:86]
+INFO: [Synth 8-6155] done synthesizing module 'mux8_32bit' (0#1) [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:86]
+INFO: [Synth 8-6155] done synthesizing module 'STUDENT_alu' (0#1) [/home/angie_wong/cs1410_lab/lab2/lab2_server/source/STUDENT_alu.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'okHost' [/home/angie_wong/cs1410_lab/lab2/lab2_server/OK_library/okLibrary.v:10]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-6157] synthesizing module 'IBUFG' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71820]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFG' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71820]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79972]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 9.920000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 54.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79972]
+WARNING: [Synth 8-7071] port 'CLKFBOUTB' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/angie_wong/cs1410_lab/lab2/lab2_server/OK_library/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT0B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/angie_wong/cs1410_lab/lab2/lab2_server/OK_library/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT1' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/angie_wong/cs1410_lab/lab2/lab2_server/OK_library/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT1B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/angie_wong/cs1410_lab/lab2/lab2_server/OK_library/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT2' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/angie_wong/cs1410_lab/lab2/lab2_server/OK_library/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT2B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/angie_wong/cs1410_lab/lab2/lab2_server/OK_library/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT3' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/angie_wong/cs1410_lab/lab2/lab2_server/OK_library/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT3B' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/angie_wong/cs1410_lab/lab2/lab2_server/OK_library/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT4' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/angie_wong/cs1410_lab/lab2/lab2_server/OK_library/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT5' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/angie_wong/cs1410_lab/lab2/lab2_server/OK_library/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'CLKOUT6' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/angie_wong/cs1410_lab/lab2/lab2_server/OK_library/okLibrary.v:53]
+WARNING: [Synth 8-7071] port 'PWRDWN' of module 'MMCME2_BASE' is unconnected for instance 'mmcm0' [/home/angie_wong/cs1410_lab/lab2/lab2_server/OK_library/okLibrary.v:53]
+WARNING: [Synth 8-7023] instance 'mmcm0' of module 'MMCME2_BASE' has 18 connections declared, but only 6 given [/home/angie_wong/cs1410_lab/lab2/lab2_server/OK_library/okLibrary.v:53]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6157] synthesizing module 'GND' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:39687]
+INFO: [Synth 8-6155] done synthesizing module 'GND' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:39687]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:135335]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:135335]
+INFO: [Synth 8-6157] synthesizing module 'LUT5' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT6' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized0' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized0' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized1' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized1' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized0' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized0' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized1' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized1' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized2' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized2' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized3' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized3' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6157] synthesizing module 'FDSE' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844]
+INFO: [Synth 8-6155] done synthesizing module 'FDSE' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38844]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized2' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized2' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized1' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized1' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79005]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79043]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized3' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized3' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized4' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized4' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT1__parameterized0' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1__parameterized0' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6157] synthesizing module 'FDPE' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38648]
+INFO: [Synth 8-6155] done synthesizing module 'FDPE' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38648]
+INFO: [Synth 8-6157] synthesizing module 'FDCE' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38492]
+INFO: [Synth 8-6155] done synthesizing module 'FDCE' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38492]
+INFO: [Synth 8-6157] synthesizing module 'RAMB18E1' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:128498]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:128498]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-6157] synthesizing module 'FDPE__parameterized0' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38648]
+INFO: [Synth 8-6155] done synthesizing module 'FDPE__parameterized0' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38648]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized4' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized4' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized5' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized5' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized6' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized6' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79085]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized7' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized7' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized8' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized8' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized9' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized9' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized10' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized10' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized11' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized11' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized5' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized5' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79131]
+INFO: [Synth 8-6157] synthesizing module 'DNA_PORT' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:36967]
+INFO: [Synth 8-6155] done synthesizing module 'DNA_PORT' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:36967]
+INFO: [Synth 8-6157] synthesizing module 'FDCE__parameterized0' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38492]
+INFO: [Synth 8-6155] done synthesizing module 'FDCE__parameterized0' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38492]
+INFO: [Synth 8-6157] synthesizing module 'FDPE__parameterized1' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38648]
+INFO: [Synth 8-6155] done synthesizing module 'FDPE__parameterized1' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38648]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized12' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized12' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized0' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized0' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized13' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized13' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized14' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized14' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized1' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized1' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized2' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized2' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized3' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized3' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized15' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized15' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized4' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized4' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized16' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized16' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized5' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized5' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized17' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized17' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'RAM128X1S' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:123464]
+INFO: [Synth 8-6155] done synthesizing module 'RAM128X1S' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:123464]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized6' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized6' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized18' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized18' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized7' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized7' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'RAM32M' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:123711]
+INFO: [Synth 8-6155] done synthesizing module 'RAM32M' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:123711]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized8' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized8' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized9' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized9' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized10' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized10' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized11' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized11' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized19' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized19' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized20' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized20' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized12' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized12' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized13' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized13' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized21' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized21' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized14' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized14' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized15' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized15' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized16' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized16' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized22' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized22' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized17' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized17' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized18' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized18' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized19' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized19' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized20' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized20' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized23' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized23' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized24' [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized24' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79181]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized21' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79227]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1__parameterized0' (0#1) [/software/xilinx-tools-2022/Vivado/2022.2/scripts/rt/data/unisim_comp.v:128498]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7071] port 'dna' of module 'okHost' is unconnected for instance 'okHI' [/home/angie_wong/cs1410_lab/lab2/lab2_server/source/alu_top.sv:82]
+WARNING: [Synth 8-7071] port 'dna_valid' of module 'okHost' is unconnected for instance 'okHI' [/home/angie_wong/cs1410_lab/lab2/lab2_server/source/alu_top.sv:82]
+WARNING: [Synth 8-7023] instance 'okHI' of module 'okHost' has 9 connections declared, but only 7 given [/home/angie_wong/cs1410_lab/lab2/lab2_server/source/alu_top.sv:82]
+	Parameter N bound to: 2 - type: integer 
+WARNING: [Synth 8-3848] Net cout in module/entity cla16 does not have driver. [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:189]
+WARNING: [Synth 8-3848] Net z_cla in module/entity STUDENT_alu does not have driver. [/home/angie_wong/cs1410_lab/lab2/lab2_server/source/STUDENT_alu.sv:108]
+WARNING: [Synth 8-7129] Port okHE[112] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[111] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[110] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[109] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[108] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[107] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[106] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[105] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[104] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[103] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[102] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[101] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[100] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[99] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[98] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[97] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[96] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[95] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[94] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[93] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[92] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[91] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[90] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[89] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[88] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[87] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[86] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[85] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[84] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[83] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[82] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[81] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[80] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[79] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[78] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[77] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[76] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[75] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[74] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[73] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[72] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[71] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[70] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[69] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[68] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[67] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[66] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[65] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[64] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[63] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[62] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[61] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[60] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[59] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[58] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[57] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[56] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[55] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[54] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[53] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[52] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[51] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[50] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[49] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[48] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[47] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[46] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[45] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[43] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[42] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[31] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[30] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[29] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[28] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[27] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[26] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[25] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[24] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[23] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[22] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[21] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[20] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[19] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[18] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[17] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[16] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[15] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[14] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[13] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[12] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[11] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[10] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[9] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[8] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[7] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[6] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[5] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[4] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[3] in module okWireOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port okHE[2] in module okWireOut is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2844.719 ; gain = 493.637 ; free physical = 373491 ; free virtual = 384573
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1926.493; parent = 1802.999; children = 123.502
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3839.449; parent = 2844.723; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2862.531 ; gain = 511.449 ; free physical = 373603 ; free virtual = 384686
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1926.493; parent = 1802.999; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3857.262; parent = 2862.535; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2862.531 ; gain = 511.449 ; free physical = 373605 ; free virtual = 384688
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1926.493; parent = 1802.999; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3857.262; parent = 2862.535; children = 994.727
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2868.469 ; gain = 0.000 ; free physical = 373613 ; free virtual = 384695
+INFO: [Netlist 29-17] Analyzing 146 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'okHI/hi_clk_bufg' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc]
+WARNING: [Constraints 18-6211] Setting input delay on a clock pin 'okUH[0]' relative to clock 'okUH0' defined on the same pin is not supported, ignoring it [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc:72]
+WARNING: [Constraints 18-6211] Setting input delay on a clock pin 'okUH[0]' relative to clock 'okUH0' defined on the same pin is not supported, ignoring it [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'sys_clkp'. [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'sys_clkp'. [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'sys_clkn'. [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'sys_clkn'. [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'sys_clkp'. [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'sys_clkp'. [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc:98]
+INFO: [Timing 38-2] Deriving generated clocks [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc:99]
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk'. [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc:99]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc:99]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks sys_clk]'. [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc:99]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc:99]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/alu_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/alu_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/alu_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3014.281 ; gain = 0.000 ; free physical = 373545 ; free virtual = 384628
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 97 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+  IOBUF => IOBUF (IBUF, OBUFT): 33 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3014.281 ; gain = 0.000 ; free physical = 373545 ; free virtual = 384627
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/software/xilinx-tools-2022/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373501 ; free virtual = 384583
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1926.493; parent = 1802.999; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3976.996; parent = 2982.270; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a75tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373502 ; free virtual = 384585
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1926.493; parent = 1802.999; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3976.996; parent = 2982.270; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373500 ; free virtual = 384582
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1926.493; parent = 1802.999; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3976.996; parent = 2982.270; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373539 ; free virtual = 384623
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1926.493; parent = 1802.999; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3976.996; parent = 2982.270; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 180 (col length:80)
+BRAMs: 210 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin z[31] with 1st driver pin 'alu_instance/slt/u_inferred/sign' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:74]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin z[31] with 2nd driver pin 'GND' [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:74]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net z[31] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv:74]
+WARNING: [Synth 8-3332] Sequential element (l008c72ad3b3ec61be52cde84a395c4fa_reg) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (l317e0a6720f17cacca076a392154f6ab_reg) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (la85eaf42c58af45585f858cdefb86492_reg) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[0]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[10]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[11]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[12]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[13]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[14]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[15]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[16]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[17]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[18]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[19]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[1]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[20]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[21]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[22]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[23]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[24]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[25]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[26]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[27]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[28]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[29]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[2]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[30]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[31]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[3]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[4]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[5]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[6]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[7]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[8]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lbb5e4c7a1ee012efa72f8a060e42e0e9_reg[9]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[0]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[10]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[11]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[12]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[13]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[14]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[15]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[16]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[17]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[18]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[19]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[1]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[20]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[21]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[22]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[23]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[24]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[25]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[26]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[27]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[28]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[29]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[2]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[30]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[31]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[3]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[4]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[5]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[6]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[7]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[8]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (ld53bc82cafe43594f651cb14d090c4f9_reg[9]) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lf38b0951701b1c1d5bc7a746e996b3c6_reg) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (okHI/regctrlout1) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[10]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[11]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[12]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[13]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[14]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[15]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[16]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[17]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[18]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[19]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[20]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[21]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[22]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[23]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[24]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[25]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[26]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[27]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[28]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[29]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[30]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[31]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[3]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[4]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[5]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[6]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[7]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[8]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[9]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[10]) is unused and will be removed from module okWireIn.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[11]) is unused and will be removed from module okWireIn.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373441 ; free virtual = 384531
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1926.493; parent = 1802.999; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3976.996; parent = 2982.270; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373377 ; free virtual = 384467
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2027.800; parent = 1904.330; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3976.996; parent = 2982.270; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373177 ; free virtual = 384267
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2074.204; parent = 1950.763; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3976.996; parent = 2982.270; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373355 ; free virtual = 384446
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2075.351; parent = 1951.881; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3976.996; parent = 2982.270; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373197 ; free virtual = 384288
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2075.873; parent = 1952.405; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3976.996; parent = 2982.270; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373193 ; free virtual = 384284
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2075.940; parent = 1952.462; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3976.996; parent = 2982.270; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373292 ; free virtual = 384384
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2075.940; parent = 1952.462; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3976.996; parent = 2982.270; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373293 ; free virtual = 384384
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2076.003; parent = 1952.524; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3976.996; parent = 2982.270; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373300 ; free virtual = 384391
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2076.003; parent = 1952.524; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3976.996; parent = 2982.270; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373303 ; free virtual = 384395
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2076.003; parent = 1952.524; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3976.996; parent = 2982.270; children = 994.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     2|
+|2     |CARRY4      |    46|
+|3     |DNA_PORT    |     1|
+|4     |LUT1        |    63|
+|5     |LUT2        |   141|
+|6     |LUT3        |   109|
+|7     |LUT4        |   228|
+|8     |LUT5        |   194|
+|9     |LUT6        |   703|
+|11    |MMCME2_BASE |     1|
+|12    |RAM128X1S   |     8|
+|13    |RAM32M      |     4|
+|14    |RAMB18E1    |     2|
+|16    |RAMB36E1    |     1|
+|17    |FDCE        |   159|
+|18    |FDPE        |    37|
+|19    |FDRE        |   732|
+|20    |FDSE        |    22|
+|21    |IBUF        |     4|
+|22    |IBUFG       |     1|
+|23    |IOBUF       |    33|
+|24    |OBUF        |     3|
+|25    |OBUFT       |     8|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373303 ; free virtual = 384394
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2076.003; parent = 1952.524; children = 123.520
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3976.996; parent = 2982.270; children = 994.727
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 780 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 3014.281 ; gain = 511.449 ; free physical = 373349 ; free virtual = 384440
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 3014.281 ; gain = 663.199 ; free physical = 373355 ; free virtual = 384447
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3014.281 ; gain = 0.000 ; free physical = 373464 ; free virtual = 384555
+INFO: [Netlist 29-17] Analyzing 146 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'okHI/hi_clk_bufg' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3014.281 ; gain = 0.000 ; free physical = 373387 ; free virtual = 384479
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 97 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+  IOBUF => IOBUF (IBUF, OBUFT): 33 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+
+Synth Design complete, checksum: ef2567de
+INFO: [Common 17-83] Releasing license: Synthesis
+396 Infos, 331 Warnings, 5 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 3014.281 ; gain = 990.457 ; free physical = 373571 ; free virtual = 384662
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.runs/synth_1/alu_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file alu_top_utilization_synth.rpt -pb alu_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 10 04:05:49 2025...

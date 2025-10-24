@@ -1,0 +1,15 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Fri Oct 10 04:07:35 2025
+| Host         : sec-academic-1.int.seas.harvard.edu running 64-bit unknown
+| Command      : report_bus_skew -warn_on_violation -file alu_top_bus_skew_routed.rpt -pb alu_top_bus_skew_routed.pb -rpx alu_top_bus_skew_routed.rpx
+| Design       : alu_top
+| Device       : 7a75t-fgg484
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

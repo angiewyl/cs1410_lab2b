@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../source" \
+"../../../../source/STUDENT_alu.sv" \
+"../../../../CS1410_lab2.srcs/sources_1/imports/source/and32.sv" \
+"../../../../tb/alu_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

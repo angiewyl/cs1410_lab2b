@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 14 2022
+05:07:14
+/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv,1760083376,systemVerilog,,/home/angie_wong/cs1410_lab/lab2/lab2_server/tb/alu_tb.sv,,and32;cla16;cla32;cla4;fulladder;mux8_32bit;rca;sll32;slt32;sra32;srl32,,uvm,../../../../source,,,,,
+/home/angie_wong/cs1410_lab/lab2/lab2_server/source/STUDENT_alu.sv,1760082229,systemVerilog,,/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.srcs/sources_1/imports/source/and32.sv,/home/angie_wong/cs1410_lab/lab2/lab2_server/source/alu.svh,STUDENT_alu,,uvm,../../../../source,,,,,
+/home/angie_wong/cs1410_lab/lab2/lab2_server/source/alu.svh,1759467706,verilog,,,,,,,,,,,,
+/home/angie_wong/cs1410_lab/lab2/lab2_server/tb/alu_tb.sv,1759487200,systemVerilog,,,/home/angie_wong/cs1410_lab/lab2/lab2_server/source/alu.svh,alu_tb,,uvm,../../../../source,,,,,

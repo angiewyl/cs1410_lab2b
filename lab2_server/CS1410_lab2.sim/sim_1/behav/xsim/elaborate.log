@@ -1,0 +1,28 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /software/xilinx-tools-2022/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot alu_tb_behav xil_defaultlib.alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'D7' [/home/angie_wong/cs1410_lab/lab2/lab2_server/source/STUDENT_alu.sv:108]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.and32
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.rca_default
+Compiling module xil_defaultlib.slt32
+Compiling module xil_defaultlib.srl32
+Compiling module xil_defaultlib.sra32
+Compiling module xil_defaultlib.sll32
+Compiling module xil_defaultlib.cla4
+Compiling module xil_defaultlib.cla16_default
+Compiling module xil_defaultlib.cla32
+Compiling module xil_defaultlib.mux8_32bit
+Compiling module xil_defaultlib.STUDENT_alu
+Compiling module xil_defaultlib.alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot alu_tb_behav

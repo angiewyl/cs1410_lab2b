@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Oct 10 04:06:01 2025
+# Process ID: 2020886
+# Current directory: /home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.runs/impl_1
+# Command line: vivado -log alu_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source alu_top.tcl -notrace
+# Log file: /home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.runs/impl_1/alu_top.vdi
+# Journal file: /home/angie_wong/cs1410_lab/lab2/lab2_server/CS1410_lab2.runs/impl_1/vivado.jou
+# Running On: sec-academic-1.int.seas.harvard.edu, OS: Linux, CPU Frequency: 1200.004 MHz, CPU Physical cores: 26, Host memory: 539830 MB
+#-----------------------------------------------------------
+source alu_top.tcl -notrace

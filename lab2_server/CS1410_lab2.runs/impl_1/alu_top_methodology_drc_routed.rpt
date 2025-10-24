@@ -1,0 +1,142 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Fri Oct 10 04:07:34 2025
+| Host         : sec-academic-1.int.seas.harvard.edu running 64-bit unknown
+| Command      : report_methodology -file alu_top_methodology_drc_routed.rpt -pb alu_top_methodology_drc_routed.pb -rpx alu_top_methodology_drc_routed.rpx
+| Design       : alu_top
+| Device       : xc7a75tfgg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 14
++-----------+------------------+---------------------------------------------------+------------+
+| Rule      | Severity         | Description                                       | Violations |
++-----------+------------------+---------------------------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                       | 1          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                      | 2          |
+| TIMING-18 | Warning          | Missing input or output delay                     | 9          |
+| XDCH-1    | Warning          | Hold option missing in multicycle path constraint | 2          |
++-----------+------------------+---------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin okHI/core0/core0/a0/d0/dna0/CLK is not reached by a timing clock
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell okHI/core0/core0/a0/cb0/U0/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[5]/CLR,
+okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[5]/CLR,
+okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR,
+okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[5]/CLR
+ (the first 15 of 26 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell okHI/core0/core0/l9ca09c625f64b90bed25f2b6c26f6e53[3]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) okHI/core0/core0/a0/l4f8cd1ab062f5571ff66db47e3d281bf_reg[2]/PRE,
+okHI/core0/core0/a0/l4f8cd1ab062f5571ff66db47e3d281bf_reg[3]/PRE,
+okHI/core0/core0/a0/l4f8cd1ab062f5571ff66db47e3d281bf_reg[4]/PRE,
+okHI/core0/core0/a0/l4f8cd1ab062f5571ff66db47e3d281bf_reg[5]/PRE,
+okHI/core0/core0/a0/l4f8cd1ab062f5571ff66db47e3d281bf_reg[6]/PRE,
+okHI/core0/core0/a0/l4f8cd1ab062f5571ff66db47e3d281bf_reg[7]/PRE,
+okHI/core0/core0/a0/l4f8cd1ab062f5571ff66db47e3d281bf_reg[8]/PRE,
+okHI/core0/core0/a0/l4f8cd1ab062f5571ff66db47e3d281bf_reg[9]/CLR,
+okHI/core0/core0/a0/l8733ba0cb25077d8c78e1b1549a80eef_reg/CLR,
+okHI/core0/core0/a0/l90ce46b343647bab4d280b5afc506219_reg/CLR,
+okHI/core0/core0/a0/l9ca09c625f64b90bed25f2b6c26f6e53_reg[0]/CLR,
+okHI/core0/core0/a0/l9ca09c625f64b90bed25f2b6c26f6e53_reg[1]/CLR,
+okHI/core0/core0/a0/l9ca09c625f64b90bed25f2b6c26f6e53_reg[2]/CLR,
+okHI/core0/core0/a0/l9ca09c625f64b90bed25f2b6c26f6e53_reg[3]/CLR,
+okHI/core0/core0/a0/le7badcf1256ff8aabbffe7a6a1b38b5f_reg/CLR
+ (the first 15 of 60 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on okAA relative to clock(s) okUH0
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on led[0] relative to clock(s) okUH0
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on led[1] relative to clock(s) okUH0
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on led[2] relative to clock(s) okUH0
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on led[3] relative to clock(s) okUH0
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on led[4] relative to clock(s) okUH0
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on led[5] relative to clock(s) okUH0
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on led[6] relative to clock(s) okUH0
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on led[7] relative to clock(s) okUH0
+Related violations: <none>
+
+XDCH-1#1 Warning
+Hold option missing in multicycle path constraint  
+A multicycle constraint has been set to override the setup relationship, but no multicycle constraint has been defined to change the hold relationship. As a result, the default hold for those paths is derived from the setup and may not be evaluated as expected.
+set_multicycle_path -setup -from [get_ports {okUHU[*]}] 2
+/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc (Line: 78)
+Related violations: <none>
+
+XDCH-1#2 Warning
+Hold option missing in multicycle path constraint  
+A multicycle constraint has been set to override the setup relationship, but no multicycle constraint has been defined to change the hold relationship. As a result, the default hold for those paths is derived from the setup and may not be evaluated as expected.
+set_multicycle_path -setup -from [get_ports {okUH[*]}] 2
+/home/angie_wong/cs1410_lab/lab2/lab2_server/constraints/xem7310.xdc (Line: 74)
+Related violations: <none>
+
+
